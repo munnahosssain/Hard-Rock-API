@@ -58,7 +58,7 @@ const getLyric = async (artist, title) => {
 // }
 const displayLyric = lyrics => {
     const lyricsDiv = document.getElementById('song-lyrics');
-    lyricsDiv.innerHTML = lyrics;
+    lyricsDiv.innerText = lyrics;
 }
 const displayError = error => {
     const errorTag = document.getElementById('error-message');

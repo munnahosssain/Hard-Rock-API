@@ -8,19 +8,24 @@ searchSongs = () => {
 }
 const displaySongs = songs => {
     const songContainer = document.getElementById('song-container');
-
     songs.forEach(song => {
         const songDiv = document.createElement('div');
         songDiv.className = 'single-result row align-items-center my-3 p-3';
         songDiv.innerHTML = `
             <div class="col-md-9">
-                <h3 class="lyric-name">Purple Noon</h3>
-                <p class="author load">Album by <span>Washed Out</span></p>
+                <h3 class="lyric-name">${song.title}</h3>
+                <p class="author load">Album by-s<span>${song.artist.name}</span></p>
+                <audio controls>
+                    <source src="${song.preview}" type="audio/mpeg">
+                </audio>
             </div>
             <div class="col-ms-3 text-md-right text-center">
-                <button class="btn btn-success">Get Lyrics</button>
+                <button onclick="getLyric('${song.artist.name}','${song.title}')" class="btn btn-success">Get Lyrics</button>
             </div>
         `
         songContainer.appendChild(songDiv);
     })
+}
+const getLyric = (artist, title) => {
+    console.log(artist, title);
 }

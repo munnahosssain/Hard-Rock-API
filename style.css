@@ -1,0 +1,43 @@
+
+body{
+    background-color: #13141b;
+    color: #ffffff;
+    background-image: url(images/see.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top;
+}
+.form-control{
+    background-color:#ffffff33;
+    padding: 22px;
+    border: none;
+    border-radius: 25px;
+}
+.btn{
+    border-radius: 1.5rem;
+    padding: 9px 20px;
+}
+.btn-previous{
+    background: #ffffff33;
+    color: #ffffff;
+}
+.navbar-toggler {
+    border: none;
+}
+.search-box{
+    position: relative;
+}
+.search-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+}
+.single-result{
+    background: #ffffff33;
+    border-radius: 15px;
+}
+.img-logo-size{
+    width: 60px;
+    border-radius: 50%;
+}
